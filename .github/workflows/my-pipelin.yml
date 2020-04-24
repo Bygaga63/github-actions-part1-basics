@@ -1,0 +1,24 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI-test
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [master]
+  
+jobs:
+  my-testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello world!" 
+    
+  deploy: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Deploy
+        run: echo "Hello world Deploy"
+
+    
